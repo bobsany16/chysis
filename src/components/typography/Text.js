@@ -15,7 +15,7 @@ const TextWrapper = styled.span`
   color: ${({ color }) => color};
   font-size: ${({ fontSize }) => fontSize}px;
   line-height: ${({ lineHeight }) => lineHeight}px;
-  font-family: ${Fonts.Montserrat};
+  font-family: ${Fonts.Rubik};
   margin: 0;
 `;
 

@@ -1,21 +1,34 @@
 import React from 'react';
 import Heading from './heading/Heading';
+import Body from './body/Body';
 
-export default {
-  title: 'Chysis/Heading',
-  component: Heading,
+const config = {
+  title: 'Chysis/Typography',
+  // component: Heading,
   argTypes: {
     color: { control: 'color' },
+    extraLarge: { control: 'boolean' },
     large: { control: 'boolean' },
     medium: { control: 'boolean' },
     small: { control: 'boolean' },
+    extraSmall: { control: 'boolean' },
   },
 };
 
-const Template = (args) => <Heading {...args} />;
+export default config;
 
-export const heading = Template.bind({});
+const HeadingTemplate = (args) => <Heading {...args} />;
+
+export const heading = HeadingTemplate.bind({});
 heading.args = {
   small: true,
-  children: 'This is a heading component',
+  children: 'This is a Heading component',
+};
+
+const BodyTemplate = (args) => <Body {...args} />;
+
+export const body = BodyTemplate.bind({});
+body.args = {
+  small: true,
+  children: 'This is a Body component',
 };
