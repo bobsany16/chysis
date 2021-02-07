@@ -1,10 +1,10 @@
 import React from 'react';
 import Heading from './heading/Heading';
 import Body from './body/Body';
+import Jumbo from './jumbo/Jumbo';
 
 const config = {
   title: 'Chysis/Typography',
-  // component: Heading,
   argTypes: {
     color: { control: 'color' },
     extraLarge: { control: 'boolean' },
@@ -31,4 +31,12 @@ export const body = BodyTemplate.bind({});
 body.args = {
   small: true,
   children: 'This is a Body component',
+};
+
+const JumboTemplate = (args) => <Jumbo {...args} />;
+
+export const jumbo = JumboTemplate.bind({});
+jumbo.args = {
+  medium: true,
+  children: 'This is a Jumbo component',
 };
