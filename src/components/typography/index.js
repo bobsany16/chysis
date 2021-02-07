@@ -6,6 +6,7 @@ import Jumbo from './jumbo/Jumbo';
 import jumboConfig from './jumbo/jumboConfig';
 import SubHeading from './subHeading/SubHeading';
 import subHeadingConfig from './subHeading/subHeadingConfig';
+import Fonts from './fonts/index';
 
 export {
   Heading,
@@ -16,4 +17,5 @@ export {
   jumboConfig,
   subHeadingConfig,
   SubHeading,
+  Fonts,
 };
